@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>2048 multiple - jsFiddle demo by rob_on_earth</title>
+  
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="../strategy.js"></script>
+  <script src="../game.js"></script>
+<script type='text/javascript'>//<![CDATA[ 
+$(document).ready( function () {
+    (new Strategy('bestscorecumul', 'Score: Cumulative', 'cumul', 5)).init();
+    (new Strategy('bestscoremoves', 'Score: Moves', 'moves', 5)).init();
+    (new Strategy('bestscorecomb', 'Score: Combinations', 'combinations', 2)).init();
+    (new Strategy('bestscoretotal', 'Score: Tile Total', 'total', 5)).init();
+    (new Strategy('random', 'Random', 'random', 5)).init();
+    (new Strategy('rotatecw', 'Sequence: Clockwise', 'rotateCW', 5)).init();
+    (new Strategy('rotateccw', 'Sequence: Counter-clockwise', 'rotateCCW', 5)).init();
+});//]]>  
+</script>
+
+  <style type='text/css'>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color:grey;
+    }
+  </style>
+</head>
+    <body>
+	<a href="https://github.com/robgithub/2048-investigations">github repository</a>
+        <hr />
+        <div id="bestscorecumul"></div><hr />
+        <div id="bestscoremoves"></div><hr />
+        <div id="bestscorecomb"></div><hr />
+        <div id="bestscoretotal"></div><hr />
+        <div id="random"></div><hr />
+        <div id="rotatecw"></div><hr />
+        <div id="rotateccw"></div><hr />
+    </body>
+</html>
