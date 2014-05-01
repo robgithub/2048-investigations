@@ -55,3 +55,5 @@ Where $('#game') is a jquery selector for the id "game" and 'rotateCCW' is the s
 
 It is all MIT licenced so go nuts.
 
+A pre-release version (all js in one file) and some additional notes can be viewed in this blog post http://www.jumpstation.co.uk/flog/Apr2014.html#270420141437
+
